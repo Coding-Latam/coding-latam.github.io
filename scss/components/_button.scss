@@ -1,0 +1,16 @@
+button,
+a {
+  border: 0;
+  color: $color-white;
+  white-space: nowrap;
+  max-width: 210px;
+  text-decoration: none;
+
+  &.btn {
+    padding: 10px 15px;
+  }
+
+  &.yellow {
+    background-color: $color-primary;
+  }
+}

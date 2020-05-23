@@ -1,0 +1,43 @@
+.posts {
+  background-color: $color-smoke;
+  &__content {
+    display: flex;
+    padding: 30px 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__info {
+    padding: 5px 10px;
+    & h1 {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid $color-blue-dark;
+        width: 25px;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+    & p {
+      margin-top: 20px;
+    }
+  }
+  &__list {
+    padding: 5px 10px;
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__box {
+    background-color: $color-white;
+    margin-left: 15px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px rgba($color: #000000, $alpha: 0.1);
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+}

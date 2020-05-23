@@ -1,0 +1,45 @@
+.nav {
+  &__content {
+    border-bottom: 1px solid $color-gray;
+    padding: 10px 15px;
+  }
+
+  &__top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    flex: 1;
+
+    img {
+      max-width: 50px;
+    }
+
+    span {
+      font-weight: bold;
+      margin-left: 15px;
+    }
+  }
+
+  &__menu {
+    display: none;
+    // flex: 4;
+
+    &.show {
+      display: block;
+    }
+
+    li {
+      display: block;
+      padding: 8px 0;
+
+      a {
+        color: $color-blue-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+body {
+  font-family: $font-primary;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-heading;
+  font-family: $font-heading;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
