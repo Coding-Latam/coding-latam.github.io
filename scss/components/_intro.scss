@@ -1,6 +1,6 @@
 .intro {
-  margin: 30px 0;
-  text-align: center;
+  background-image: url("images/wave.svg");
+  background-size: cover;
 
   a {
     display: block;
@@ -9,15 +9,85 @@
   }
 
   h1 {
-    margin: 0 auto 30px;
-  }
+    margin: 0 auto 40px;
 
-  img {
-    max-width: 90px;
+    span {
+      position: relative;
+
+      &:before {
+        content: "";
+        bottom: -9px;
+        background-size: 20px 20px;
+        height: 5px;
+        background-color: $color-primary;
+        border-radius: 6px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+    }
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
+
+    @include breakpoint($sm) {
+      font-size: 20px;
+      max-width: 290px;
+    }
+  }
+
+  &__content {
+    padding: 60px 40px 20px;
+    text-align: center;
+
+    @include breakpoint($sm) {
+      display: flex;
+      justify-content: space-between;
+      min-height: 300px;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    @include breakpoint($md) {
+      max-width: 920px;
+      padding: 20px 0;
+      margin: 0 auto;
+    }
+
+    @include breakpoint($lg) {
+      max-width: 1170px;
+      min-height: 400px;
+      padding: 60px 0;
+    }
+  }
+
+  &__text {
+    @include breakpoint($sm) {
+      text-align: left;
+    }
+  }
+
+  &__logos {
+    margin-top: 20px;
+
+    @include breakpoint($sm) {
+      margin-top: 100px;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      max-width: 80px;
+
+      @include breakpoint($sm) {
+        max-width: 100px;
+      }
+
+      @include breakpoint($lg) {
+        max-width: 130px;
+      }
+    }
   }
 }

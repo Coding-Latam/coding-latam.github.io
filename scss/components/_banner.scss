@@ -1,0 +1,20 @@
+.banner {
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+
+  @include breakpoint($sm) {
+    padding: 40px;
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 155px;
+  }
+
+  p {
+    margin: 0 0 40px;
+  }
+}

@@ -1,9 +1,21 @@
-footer {
+.footer {
   background-color: $color-blue-dark;
   padding: 50px 0;
 
   p {
     color: $color-white;
     text-align: center;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 30px auto;
+
+    .icon {
+      color: $color-white;
+      font-size: 32px;
+    }
   }
 }

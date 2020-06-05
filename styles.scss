@@ -1,3 +1,4 @@
+@import "scss/base/fonts";
 @import "scss/base/variables";
 @import "scss/base/mixins";
 @import "scss/base/base";
@@ -9,3 +10,7 @@
 @import "scss/components/nav";
 @import "scss/components/posts";
 @import "scss/components/intro";
+@import "scss/components/banner";
+@import "scss/components/courses";
+@import "scss/components/course";
+@import "scss/components/join-us";

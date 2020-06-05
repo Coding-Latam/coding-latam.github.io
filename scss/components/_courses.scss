@@ -1,0 +1,29 @@
+.courses {
+  padding: 50px 30px 30px;
+
+  @include breakpoint($sm) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__intro {
+    width: 100%;
+    p {
+      text-align: center;
+      line-height: 24px;
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      @include breakpoint($sm) {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+
+      @include breakpoint($md) {
+        margin: 0 auto 30px;
+        max-width: 500px;
+      }
+    }
+  }
+}

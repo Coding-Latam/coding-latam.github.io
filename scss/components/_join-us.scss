@@ -1,0 +1,53 @@
+.join-us {
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include breakpoint($sm) {
+      max-width: 745px;
+      margin: 0 auto 30px;
+    }
+
+    @include breakpoint($md) {
+      max-width: 920px;
+    }
+
+    @include breakpoint($lg) {
+      max-width: 1170px;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+
+      img {
+        max-width: 80px;
+      }
+    }
+
+    &__description {
+      width: 70%;
+
+      @include breakpoint($sm) {
+        text-align: left;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      a {
+        @include breakpoint($sm) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
