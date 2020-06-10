@@ -1,12 +1,12 @@
 .course {
   background-color: #ffffff;
   box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.1);
-  margin-bottom: 30px;
-  max-width: 100%;
-  padding: 10px;
+  margin: 0 auto 30px;
+  max-width: 290px;
+  padding: 10px 15px;
 
   @include breakpoint($sm) {
-    max-width: 200px;
+    max-width: 220px;
   }
 
   @include breakpoint($md) {
@@ -14,7 +14,7 @@
   }
 
   @include breakpoint($lg) {
-    max-width: 290px;
+    max-width: 300px;
   }
 
   &__title {
@@ -28,7 +28,7 @@
       }
 
       @include breakpoint($md) {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -51,9 +51,10 @@
     a {
       display: block;
       margin-left: auto;
-      max-width: 90px;
+      max-width: 110px;
       padding: 8px;
       text-align: center;
+      width: auto;
     }
   }
 }

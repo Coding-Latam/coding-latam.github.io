@@ -1,4 +1,18 @@
 .join-us {
+  padding: 0 20px;
+
+  @include breakpoint($sm) {
+    max-width: 745px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 920px;
+  }
+
+  @include breakpoint($lg) {
+    max-width: 1170px;
+  }
+
   .item {
     display: flex;
     align-items: center;
@@ -6,16 +20,7 @@
     margin-bottom: 30px;
 
     @include breakpoint($sm) {
-      max-width: 745px;
       margin: 0 auto 30px;
-    }
-
-    @include breakpoint($md) {
-      max-width: 920px;
-    }
-
-    @include breakpoint($lg) {
-      max-width: 1170px;
     }
 
     &__image {

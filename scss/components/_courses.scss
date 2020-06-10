@@ -1,14 +1,32 @@
 .courses {
-  padding: 50px 30px 30px;
+  background: url("images/wave2.svg");
+  background-repeat: no-repeat;
+  padding: 100px 20px;
 
   @include breakpoint($sm) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 60px 20px;
+  }
+
+  @include breakpoint($md) {
+    background-position: 100% -50px;
   }
 
   &__intro {
+    margin-top: 25px;
     width: 100%;
+
+    @include breakpoint($sm) {
+      margin-top: 100px;
+    }
+
+    @include breakpoint($md) {
+      margin: 150px 0 50px;
+    }
+
+    @include breakpoint($lg) {
+      margin: 210px 0 50px;
+    }
+
     p {
       text-align: center;
       line-height: 24px;
@@ -24,6 +42,24 @@
         margin: 0 auto 30px;
         max-width: 500px;
       }
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+
+    @include breakpoint($sm) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint($md) {
+      max-width: 920px;
+    }
+
+    @include breakpoint($lg) {
+      max-width: 1170px;
     }
   }
 }

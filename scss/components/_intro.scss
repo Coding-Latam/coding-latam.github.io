@@ -1,6 +1,15 @@
 .intro {
   background-image: url("images/wave.svg");
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @include breakpoint($xs-ls) {
+    background-position: 100% 140px;
+  }
+
+  @include breakpoint($sm) {
+    background-position: 100% 205px;
+  }
 
   a {
     display: block;
@@ -9,7 +18,11 @@
   }
 
   h1 {
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
+
+    @include breakpoint($sm) {
+      margin: 0 auto 50px;
+    }
 
     span {
       position: relative;
@@ -42,51 +55,66 @@
     padding: 60px 40px 20px;
     text-align: center;
 
-    @include breakpoint($sm) {
+    @include breakpoint($xs-ls) {
       display: flex;
       justify-content: space-between;
-      min-height: 300px;
       align-items: center;
-      padding: 20px 40px;
+      padding: 55px 40px 120px;
+    }
+
+    @include breakpoint($sm) {
+      padding: 70px 40px 80px;
     }
 
     @include breakpoint($md) {
       max-width: 920px;
-      padding: 20px 0;
       margin: 0 auto;
     }
 
     @include breakpoint($lg) {
       max-width: 1170px;
-      min-height: 400px;
-      padding: 60px 0;
+      padding: 60px 40px;
     }
   }
 
   &__text {
-    @include breakpoint($sm) {
+    @include breakpoint($xs-ls) {
       text-align: left;
+      width: 60%;
+    }
+
+    @include breakpoint($sm) {
+      width: auto;
     }
   }
 
   &__logos {
-    margin-top: 20px;
+    padding-top: 30px;
 
-    @include breakpoint($sm) {
-      margin-top: 100px;
+    @include breakpoint($xs-ls) {
+      padding: 0;
     }
 
     img {
       display: block;
       margin-left: auto;
       max-width: 80px;
+      animation: growing 1.5s alternate infinite ease-in;
 
-      @include breakpoint($sm) {
+      @include breakpoint($xs-ls) {
         max-width: 100px;
       }
 
-      @include breakpoint($lg) {
+      @include breakpoint($sm) {
         max-width: 130px;
+      }
+
+      @include breakpoint($md) {
+        max-width: 160px;
+      }
+
+      @include breakpoint($lg) {
+        max-width: 220px;
       }
     }
   }

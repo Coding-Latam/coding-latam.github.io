@@ -14,6 +14,25 @@
     justify-content: space-between;
   }
 
+  &__links {
+    display: none;
+
+    @include breakpoint($md) {
+      display: block;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        padding: 0 30px 0 0;
+
+        a {
+          color: $color-blue-dark;
+        }
+      }
+    }
+  }
+
   &__logo {
     align-items: center;
     display: flex;
@@ -24,25 +43,48 @@
     }
 
     span {
-      font-weight: bold;
       margin-left: 15px;
     }
   }
 
   &__menu {
     display: none;
-    // flex: 4;
 
     &.show {
       display: block;
+      position: absolute;
+      top: 0;
+      background: #ffd665;
+      width: 100%;
+      left: 0;
+      height: 100vh;
+      z-index: 10;
+      text-align: center;
+
+      @include breakpoint($md) {
+        display: none;
+      }
+
+      button {
+        background-color: $color-blue-dark;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        padding: 10px 20px;
+      }
     }
 
     li {
       display: block;
-      padding: 8px 0;
+      padding: 20px 0;
+
+      &:first-of-type {
+        margin-top: 40px;
+      }
 
       a {
         color: $color-blue-dark;
+        font-size: 20px;
       }
     }
   }

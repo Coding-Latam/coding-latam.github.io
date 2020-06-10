@@ -1,6 +1,6 @@
 .banner {
   background-color: #ffffff;
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
 
   @include breakpoint($sm) {
@@ -11,7 +11,8 @@
     display: block;
     margin: 0 auto;
     width: auto;
-    max-width: 155px;
+    max-width: 165px;
+    text-align: center;
   }
 
   p {

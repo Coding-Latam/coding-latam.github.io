@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -40,16 +40,28 @@
               <img src="/images/logo.png" alt="" />
               <span>Coding Latam</span>
             </div>
+            <div class="nav__links">
+              <ul>
+                <li>
+                  <a class="scrollable" href="#description">Cómo funciona</a>
+                </li>
+                <li><a class="scrollable" href="#courses">Cursos</a></li>
+                <li><a class="scrollable" href="/blog">Blog</a></li>
+              </ul>
+            </div>
             <div class="nav__button">
-              <a class="btn yellow" href="https://bit.ly/3eIMk7w">Unete</a>
+              <a class="btn yellow scrollable" href="#join">Únete</a>
             </div>
           </div>
           <div class="nav__bottom">
             <ul class="nav__menu fadeIn" id="navMenu">
-              <li><a href="/">Unete</a></li>
-              <li><a href="/">Como funciona</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Patreon</a></li>
+              <button id="navClose" onclick="toggleMenu()">X</button>
+              <li><a class="scrollable" href="#join">Únete</a></li>
+              <li>
+                <a class="scrollable" href="#description">Cómo funciona</a>
+              </li>
+              <li><a class="scrollable" href="#courses">Cursos</a></li>
+              <li><a class="scrollable" href="/blog">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -73,21 +85,22 @@
           </div>
         </div>
       </section>
-      <div class="container">
-        <section class="courses">
+
+      <section class="courses">
+        <div class="courses__content">
           <div class="courses__intro">
-            <h2>¿Qué es lo que hacemos?</h2>
+            <h2 id="description">¿Qué es lo que hacemos?</h2>
             <p>
               Compartimos conocimiento(talleres, workshops, cursos, etc) para
               apoyar a los profesionales que inician en el mundo de la web.
             </p>
           </div>
-          <div class="course">
+          <div class="course" id="courses">
             <div class="course__image">
-              <img src="./images/rsz-web-design.jpg" alt="" />
+              <img src="./images/web-dev.png" alt="" />
             </div>
             <div class="course__title">
-              <h3>Aprende desarrollo web</h3>
+              <h3>Curso de diseño y desarrollo web</h3>
             </div>
             <div class="course__description">
               <p>
@@ -102,7 +115,7 @@
           </div>
           <div class="course">
             <div class="course__image">
-              <img src="./images/rsz-responsive.jpg" alt="" />
+              <img src="./images/responsive-design.png" alt="" />
             </div>
             <div class="course__title">
               <h3>Taller de Responsive Design</h3>
@@ -116,10 +129,9 @@
               >
             </div>
           </div>
-
           <div class="course">
             <div class="course__image">
-              <img src="./images/web-design.jpg" alt="" />
+              <img src="./images/javascript.png" alt="" />
             </div>
             <div class="course__title">
               <h3>Fundamentos de Javascript</h3>
@@ -133,9 +145,10 @@
               >
             </div>
           </div>
-        </section>
-      </div>
-      <section class="banner">
+        </div>
+      </section>
+
+      <section class="banner" id="join">
         <h2>¿Cómo me uno?</h2>
         <p>En Coding Latam tienes 2 maneras de participar:</p>
 
@@ -176,6 +189,63 @@
           </div>
         </div>
       </section>
+      <section class="suscribe">
+        <h3>
+          Sé el primero en recibir los nuevos cursos y talleres!
+        </h3>
+        <!-- Begin Mailchimp Signup Form -->
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+
+        <div id="mc_embed_signup">
+          <form
+            action="https://dev.us10.list-manage.com/subscribe/post?u=83f99fb8a077bb4bcfeb21603&amp;id=6a55c4aa0f"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+          >
+            <div id="mc_embed_signup_scroll">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="email"
+                id="mce-EMAIL"
+                placeholder="Tu email"
+                required
+              />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div
+                style="position: absolute; left: -5000px;"
+                aria-hidden="true"
+              >
+                <input
+                  type="text"
+                  name="b_83f99fb8a077bb4bcfeb21603_6a55c4aa0f"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Suscribirme"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -185,40 +255,27 @@
             href="https://www.facebook.com/Coding-Latam-101511408266837/"
             ><span class="icon icon-facebook"></span
           ></a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/Coding-Latam-101511408266837/"
+          <a target="_blank" href="https://www.instagram.com/codinglatam/"
             ><span class="icon icon-instagram"></span
           ></a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/Coding-Latam-101511408266837/"
+          <a target="_blank" href="https://wa.link/du8zv8"
             ><span class="icon icon-whatsapp"></span
           ></a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/Coding-Latam-101511408266837/"
+          <a target="_blank" href="https://twitter.com/codinglatam"
             ><span class="icon icon-twitter"></span
           ></a>
           <a
             target="_blank"
-            href="https://www.facebook.com/Coding-Latam-101511408266837/"
+            href="https://www.youtube.com/channel/UCPcMiIKT4RJboN9Hx2pajoA"
             ><span class="icon icon-youtube"></span
           ></a>
         </div>
         <div class="footer__content">
-          <!-- <div class="item">
-            <h3></h3>  
-          </div> -->
           <p>© Coding Latam 2020. Todos los derechos reservados</p>
         </div>
       </div>
     </footer>
-    <script>
-      function toggleMenu() {
-        var navMenu = document.getElementById("navMenu");
-        navMenu.classList.toggle("show");
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
