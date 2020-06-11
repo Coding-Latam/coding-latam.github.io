@@ -676,9 +676,17 @@ a.yellow {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.1);
           box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.1);
+  cursor: pointer;
   margin: 0 auto 30px;
   max-width: 290px;
   padding: 10px 15px;
+  -webkit-transition: all ease 50ms;
+  transition: all ease 50ms;
+}
+
+.course:hover {
+  outline: auto;
+  outline-color: #fbc531;
 }
 
 @media (min-width: 768px) {
