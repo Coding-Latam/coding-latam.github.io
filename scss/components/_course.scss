@@ -5,11 +5,13 @@
   margin: 0 auto 30px;
   max-width: 290px;
   padding: 10px 15px;
-  transition: all ease 50ms;
+  transition: all ease 500ms;
 
   &:hover {
-    outline: auto;
-    outline-color: $color-primary;
+    // outline: auto;
+    // outline-color: $color-primary;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.42);
   }
 
   @include breakpoint($sm) {
@@ -44,12 +46,14 @@
     @include breakpoint($md) {
       min-height: 75px;
     }
+
     p {
       font-size: 14px;
+      line-height: 20px;
       margin-bottom: 20px;
 
-      @include breakpoint($sm) {
-        font-size: 15px;
+      @include breakpoint($md) {
+        font-size: 16px;
       }
     }
   }
@@ -57,6 +61,7 @@
   &__button {
     a {
       display: block;
+      font-size: 16px;
       margin-left: auto;
       max-width: 110px;
       padding: 8px;

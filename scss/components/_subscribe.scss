@@ -1,14 +1,27 @@
 .suscribe {
   background: rgba(255, 255, 0, 0.1411764705882353);
-  padding: 50px 0;
+  padding: 50px 20px;
   margin: 0 auto;
   text-align: center;
 
   h3 {
     margin-bottom: 30px;
+
+    @include breakpoint($md) {
+      font-size: 26px;
+    }
   }
 
   #mc_embed_signup {
+    @include breakpoint($xs-ls) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    @include breakpoint($md) {
+      max-width: 100%;
+    }
+
     form {
       padding: 0;
     }
@@ -18,14 +31,20 @@
       border-radius: 0;
       font-family: $font-primary;
       outline: none;
+      height: 44px;
 
       &:focus {
         border: 1px solid $color-blue-dark;
       }
     }
 
+    input.email {
+      margin-bottom: 10px;
+    }
+
     .button {
       background: $color-primary;
+      font-size: 16px;
       &:hover {
         background-color: $color-primary;
       }

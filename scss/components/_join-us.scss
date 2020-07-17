@@ -7,6 +7,8 @@
 
   @include breakpoint($md) {
     max-width: 920px;
+    margin: 0 auto;
+    padding: 35px 20px 0;
   }
 
   @include breakpoint($lg) {

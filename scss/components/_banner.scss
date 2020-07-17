@@ -11,11 +11,16 @@
     display: block;
     margin: 0 auto;
     width: auto;
-    max-width: 165px;
+    max-width: 185px;
     text-align: center;
+    font-size: 16px;
   }
 
   p {
     margin: 0 0 40px;
+
+    @include breakpoint($md) {
+      font-size: 20px;
+    }
   }
 }
