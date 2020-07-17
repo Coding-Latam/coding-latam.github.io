@@ -1,0 +1,36 @@
+.groups-header {
+  background-color: rgba(255, 207, 0, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 400px;
+  text-align: center;
+
+  &__image {
+    width: 100%;
+
+    @include breakpoint($sm) {
+      width: 40%;
+    }
+
+    img {
+      margin: 0 auto;
+      max-width: 200px;
+      display: block;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    @include breakpoint($sm) {
+      padding: 0 30px;
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+}

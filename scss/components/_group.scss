@@ -1,0 +1,48 @@
+.group {
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.1);
+  max-width: 300px;
+  margin: 0 auto 30px;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 500ms;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.42);
+  }
+
+  @include breakpoint($sm) {
+    width: 350px;
+  }
+
+  &__image {
+    background: rgba(173, 173, 172, 0.15%);
+    width: 35%;
+    padding: 20px 0;
+    height: 105px;
+
+    @include breakpoint($sm) {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      max-width: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    width: 65%;
+    padding: 0 20px;
+
+    h3 {
+    }
+
+    p {
+    }
+  }
+}

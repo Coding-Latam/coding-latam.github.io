@@ -1,0 +1,26 @@
+.groups-description {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  .groups-tags {
+    padding: 40px 15px;
+
+    li {
+      background-color: #dcdde1;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 10px;
+      width: auto;
+      display: inline-block;
+    }
+  }
+
+  .groups-list {
+    @include breakpoint($sm) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 0 40px;
+    }
+  }
+}

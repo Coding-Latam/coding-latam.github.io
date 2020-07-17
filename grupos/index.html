@@ -4,8 +4,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Latam | Grupos de estudio</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169146435-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169146435-1");
+    </script>
   </head>
   <body>
-    <main></main>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <div class="nav__top">
+            <div class="nav__logo" id="burger" onclick="toggleMenu()">
+              <img src="/images/logo.png" alt="" />
+              <span>Coding Latam</span>
+            </div>
+            <div class="nav__links">
+              <ul>
+                <li>
+                  <a class="scrollable" href="#description">Cómo funciona</a>
+                </li>
+                <li><a class="scrollable" href="#courses">Cursos</a></li>
+                <!-- <li><a class="scrollable" href="/blog">Blog</a></li> -->
+              </ul>
+            </div>
+            <div class="nav__button">
+              <a class="btn yellow scrollable" href="#join">Únete</a>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <ul class="nav__menu fadeIn" id="navMenu">
+              <button id="navClose" onclick="toggleMenu()">X</button>
+              <li><a class="scrollable" href="#join">Únete</a></li>
+              <li>
+                <a class="scrollable" href="#description">Cómo funciona</a>
+              </li>
+              <li><a class="scrollable" href="#courses">Cursos</a></li>
+              <li><a class="scrollable" href="/blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="groups-header">
+        <div class="groups-header__image">
+          <img src="/images/laptop.webp" alt="" />
+        </div>
+        <div class="groups-header__text">
+          <h1>Mejora tu aprendizaje con los grupos de estudio</h1>
+        </div>
+      </header>
+      <section class="groups-description">
+        <ul class="groups-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>Git</li>
+          <li>UX</li>
+          <li>SASS</li>
+          <li>Performance</li>
+          <li>Accesibilidad</li>
+          <li>Angular</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>Wordpress</li>
+        </ul>
+        <div class="groups-list">
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/html.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>HTML</h3>
+              <p>Ven a conocer HTML desde 0</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/css.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>CSS</h3>
+              <p>Estiliza tus templates aplicando CSS</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/js.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>JS</h3>
+              <p>Conoce las bases de Javascript</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/sass.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>SASS</h3>
+              <p>Dale superpoderes a tu CSS</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/accesibilidad.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>Accesibilidad Web</h3>
+              <p>¿Qué tan accesible es tu web?</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/html.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>HTML y semántica</h3>
+              <p>Estás usando las etiquetas correctas?</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/responsive.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>Responsive Design</h3>
+              <p>Tu web adaptable a todos los dispotivos</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/lighthouse.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>Performance y optimización</h3>
+              <p>¿En cuántos segundos carga tu web?</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image">
+              <img src="/images/react.png" alt="" />
+            </div>
+            <div class="group__description">
+              <h3>Iniciando con React js</h3>
+              <p>Todo es un componente</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <a target="_blank" href="https://www.facebook.com/codinglatam/"
+            ><span class="icon icon-facebook"></span
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/codinglatam/"
+            ><span class="icon icon-instagram"></span
+          ></a>
+          <a target="_blank" href="https://wa.link/du8zv8"
+            ><span class="icon icon-whatsapp"></span
+          ></a>
+          <a target="_blank" href="https://twitter.com/codinglatam"
+            ><span class="icon icon-twitter"></span
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCPcMiIKT4RJboN9Hx2pajoA"
+            ><span class="icon icon-youtube"></span
+          ></a>
+        </div>
+        <div class="footer__content">
+          <p>© Coding Latam 2020. Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
