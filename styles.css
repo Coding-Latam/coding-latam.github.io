@@ -1070,6 +1070,7 @@ a.yellow {
 @media (min-width: 768px) {
   .talk {
     max-width: 590px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -1108,5 +1109,11 @@ a.yellow {
 
 .talks {
   padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .talks {
+    padding: 50px 0 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

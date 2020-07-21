@@ -11,6 +11,7 @@
 
   @include breakpoint($sm) {
     max-width: 590px;
+    margin: 0 auto 50px;
   }
 
   &__image {
@@ -47,4 +48,8 @@
 
 .talks {
   padding: 30px 0;
+
+  @include breakpoint($sm) {
+    padding: 50px 0 20px;
+  }
 }
