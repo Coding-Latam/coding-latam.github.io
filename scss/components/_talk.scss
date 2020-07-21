@@ -1,0 +1,50 @@
+.talk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 290px;
+  margin: 0 auto 30px;
+
+  @include breakpoint($xs-ls) {
+    max-width: 90%;
+  }
+
+  @include breakpoint($sm) {
+    max-width: 590px;
+  }
+
+  &__image {
+    width: 20%;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+
+      @include breakpoint($sm) {
+        max-width: 80px;
+      }
+    }
+  }
+
+  &__description {
+    padding: 0 15px;
+    width: 80%;
+
+    h3 {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    background-color: $color-primary;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 150px;
+  }
+}
+
+.talks {
+  padding: 30px 0;
+}

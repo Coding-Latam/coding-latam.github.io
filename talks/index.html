@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Latam | Grupos de estudio</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169146435-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169146435-1");
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <div class="nav__top">
+            <div class="nav__logo" id="burger" onclick="toggleMenu()">
+              <img src="/images/logo.png" alt="" />
+              <span>Coding Latam</span>
+            </div>
+            <div class="nav__links">
+              <ul>
+                <li>
+                  <a class="scrollable" href="/grupos">Grupos de estudio</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__button">
+              <a class="btn yellow scrollable" href="/#join">Únete</a>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <ul class="nav__menu fadeIn" id="navMenu">
+              <button id="navClose" onclick="toggleMenu()">X</button>
+              <li>
+                <a class="scrollable" href="#courses">Grupos de estudio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="groups-header">
+        <div class="groups-header__image">
+          <img src="/images/laptop.webp" alt="" />
+        </div>
+        <div class="groups-header__text">
+          <h1>Conoce las próximas actividades de la comunidad</h1>
+        </div>
+      </header>
+      <section class="talks">
+        <div class="talk">
+          <div class="talk__image">
+            <img src="/images/calendar.svg" alt="" />
+          </div>
+          <div class="talk__description">
+            <h3>Pregúntale a tu profe - Javascript Básico</h3>
+            <p>22 Julio/20:00 horas GMT-5</p>
+            <a
+              class="talk__link"
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmQxMzRkcmF2cW5yNTBzbWNyZWg5M2xoMzAgMzE4MTRidWU4MzhrN21hbHRsbmE4OWQzZzBAZw&tmsrc=31814bue838k7maltlna89d3g0%40group.calendar.google.com"
+              >Agregar a calendario</a
+            >
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk__image">
+            <img src="/images/calendar.svg" alt="" />
+          </div>
+          <div class="talk__description">
+            <h3>LIVE - Principios de Integración Frontend y Backend</h3>
+            <p>24 Julio/20:00 horas GMT-5</p>
+            <a
+              class="talk__link"
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDdpMmxjMnZndGUxa2tvbGRtc24zZXV0ODAgMzE4MTRidWU4MzhrN21hbHRsbmE4OWQzZzBAZw&tmsrc=31814bue838k7maltlna89d3g0%40group.calendar.google.com"
+              >Agregar a calendario</a
+            >
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk__image">
+            <img src="/images/calendar.svg" alt="" />
+          </div>
+          <div class="talk__description">
+            <h3>LIVE - Creando tu perfil de Github con README</h3>
+            <p>31 Julio/20:00 horas GMT-5</p>
+            <a
+              class="talk__link"
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MWJtdGw2Z2Q5cjU4ZHBlcms5MjNvNzNrcTYgMzE4MTRidWU4MzhrN21hbHRsbmE4OWQzZzBAZw&tmsrc=31814bue838k7maltlna89d3g0%40group.calendar.google.com"
+              >Agregar a calendario</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <a target="_blank" href="https://www.facebook.com/codinglatam/"
+            ><span class="icon icon-facebook"></span
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/codinglatam/"
+            ><span class="icon icon-instagram"></span
+          ></a>
+          <a target="_blank" href="https://wa.link/du8zv8"
+            ><span class="icon icon-whatsapp"></span
+          ></a>
+          <a target="_blank" href="https://twitter.com/codinglatam"
+            ><span class="icon icon-twitter"></span
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCPcMiIKT4RJboN9Hx2pajoA"
+            ><span class="icon icon-youtube"></span
+          ></a>
+        </div>
+        <div class="footer__content">
+          <p>© Coding Latam 2020. Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
