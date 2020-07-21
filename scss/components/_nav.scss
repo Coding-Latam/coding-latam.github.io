@@ -28,6 +28,10 @@
 
         a {
           color: $color-blue-dark;
+
+          &:hover {
+            box-shadow: none;
+          }
         }
       }
     }
@@ -37,6 +41,15 @@
     align-items: center;
     display: flex;
     flex: 1;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        box-shadow: none;
+      }
+    }
 
     img {
       max-width: 50px;
