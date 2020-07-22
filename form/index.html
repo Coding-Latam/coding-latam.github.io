@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .steps {
+        max-width: 290px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+      }
+      .page {
+        opacity: 0;
+        display: inline-block;
+        flex: 0 0 100%;
+        width: 100%;
+        transition: opacity 0.2s ease-in-out, height 0.1s ease-in-out;
+        vertical-align: top;
+        position: relative;
+      }
+      .page.current {
+        opacity: 1;
+        height: auto;
+      }
+      .page input {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+    <div id="root"></div>
+    <script src="/dist/form.js"></script>
+    <!-- <script>
+      let wrapper = document.getElementById("steps");
+      let nextButton = document.getElementById("next");
+      let prevButton = document.getElementById("prev");
+      let currentPage = document.getElementsByClassName("current");
+      let pages = document.getElementsByClassName("page");
+      let pagesArray = [...pages];
+
+      nextButton.addEventListener("click", function (e) {
+        // currentPage[0].classList.remove("current");
+        for (let i = 0; i < pagesArray.length; i++) {
+          if (pagesArray[i].className.includes("current")) {
+            pagesArray[i].classList.remove("current");
+            i++;
+            pagesArray[i].classList.add("current");
+          }
+        }
+        wrapper.style.transform = "translateX(-100%)";
+      });
+
+      prevButton.addEventListener("click", function (e) {
+        // currentPage[0].classList.remove("current");
+        for (let i = 0; i < pagesArray.length; i++) {
+          if (pagesArray[i].className.includes("current")) {
+            pagesArray[i].classList.remove("current");
+            i--;
+            pagesArray[i].classList.add("current");
+          }
+        }
+        wrapper.style.transform = "translateX(0%)";
+      });
+    </script> -->
+  </body>
+</html>
